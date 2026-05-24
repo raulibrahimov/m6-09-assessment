@@ -1,0 +1,13 @@
+{
+  "first_name": "Raul",
+  "last_name": "Ibrahimov",
+  "team": "raul-ibrahimov",
+  "model": {
+    "framework": "yolo26",
+    "variant": "yolo26n",
+    "imgsz": 640,
+    "epochs_total": 76,
+    "tricks": ["hard_negative_backgrounds", "two_stage_finetune", "low_lr_cosine_refine"]
+  },
+  "notes": "yolo26n. Stage 1 (cats_v2, 50 ep): cats + 250 dog hard-negative backgrounds. Stage 2 (cats_v2_ft, 26 ep): aug-off refinement, AdamW lr0=1e-4 cos_lr, patience=10. Lifts P (+0.021) and mAP@0.5:0.95 (+0.0001) over Week-1 baseline; trades 0.005 mAP@0.5 for the dog-FP robustness."
+}

@@ -1,0 +1,9 @@
+# local copy of m6-04 data_aug.yaml with absolute path so Ultralytics doesn't
+# prepend its datasets_dir. Same train/val/test as Week-1; train has +250 dog
+# hard-negative backgrounds for the cats_v2 family.
+path: /Users/raul/Desktop/m6-04-assessmentold/data
+train: DATA_CLEAN/train_aug.txt
+val: DATA_CLEAN/val.txt
+test: DATA_CLEAN/test.txt
+names:
+  0: cat
